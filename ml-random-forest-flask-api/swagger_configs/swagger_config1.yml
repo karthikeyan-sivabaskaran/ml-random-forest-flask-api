@@ -1,0 +1,35 @@
+Example endpoint returning a prediction of iris data
+---
+  parameters:
+    - name: sepal_length
+      in: query
+      type: number
+      required: true
+      description: Float datatype
+    - name: sepal_width
+      in: query
+      type: number
+      required: true
+      description: Float datatype
+    - name: petal_length
+      in: query
+      type: number
+      required: true
+      description: Float datatype
+    - name: petal_width
+      in: query
+      type: number
+      required: true
+      description: Float datatype
+  responses:
+    500:
+      description: Error Please enter the correct input parameters
+    200:
+      description: Model Details for single prediction
+      schema:
+        id: Model output details for single prediction
+        properties:
+          Api Response:
+            type: string
+            description: prediction output for single row
+            default: 'NA'

@@ -1,0 +1,20 @@
+Example file endpoint returning a prediction of iris
+  ---
+  parameters:
+    - name: input_file
+      in: formData
+      type: file
+      required: true
+      description: File input without header
+  responses:
+    500:
+      description: Error Please enter the correct input file
+    200:
+      description: Model Details for multiple prediction by passing input file as parameter
+      schema:
+        id: Model output details for mulitple predictions
+        properties:
+          Api Response:
+            type: string
+            description: prediction output for multiple rows in given input file
+            default: 'NA'
