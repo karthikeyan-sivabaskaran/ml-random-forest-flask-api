@@ -23,6 +23,6 @@ PyYAML==5.1.2
 scikit-learn==0.21.3
 scipy==1.3.1
 six==1.12.0
-sqlparse==0.3.0
+sqlparse==0.4.4
 Werkzeug==0.16.0
 zipp==0.6.0
