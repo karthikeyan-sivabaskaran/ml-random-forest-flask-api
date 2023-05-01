@@ -3,7 +3,7 @@ Click==7.0
 Django==2.2.28
 django-request==1.5.5
 flasgger==0.9.3
-Flask==1.1.1
+Flask==2.3.2
 future==0.18.2
 gunicorn==19.9.0
 importlib-metadata==0.23
